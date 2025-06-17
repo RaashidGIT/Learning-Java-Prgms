@@ -2,11 +2,9 @@
 
 /*
 
-Perfect (sum of proper divisors equals the number)
-
-Abundant (sum of proper divisors is greater than the number)
-
-Deficient (sum of proper divisors is less than the number)
+- Perfect (sum of proper divisors equals the number)
+- Abundant (sum of proper divisors is greater than the number)
+- Deficient (sum of proper divisors is less than the number)
 
 */
 
@@ -42,11 +40,17 @@ public class NumberTypeChecker {
 
 /*
 
-Perfect: Sum of proper divisors = number (e.g., 6, 28)
+Perfect: Sum of proper divisors = number (e.g., 28)
+Proper divisors of 28: 1 2 4 7 14 
+Sum of proper divisors: 28
 
 Abundant: Sum of proper divisors > number (e.g., 12)
+Proper divisors of 12: 1 2 3 4 6 
+Sum of proper divisors: 16
 
 Deficient: Sum of proper divisors < number (e.g., 9)
+Proper divisors of 9: 1 3 
+Sum of proper divisors: 4
 
 -----------------
 Simulated Output:
