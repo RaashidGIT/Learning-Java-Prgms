@@ -1,5 +1,17 @@
 // Aim: To find the GCD (Greatest Common Divisor) of two numbers
 
+/*
+
+GCD of two (or more) integers is the largest positive integer that evenly divides both numbers — meaning it leaves no remainder.
+
+- Let's take two numbers: 36 and 60
+- Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36
+- Factors of 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60
+- Common factors: 1, 2, 3, 4, 6, 12
+- GCD = 12 (the greatest among the common factors)
+
+*/
+
 import java.util.Scanner;
 
 public class GCDCalculator {
@@ -32,9 +44,11 @@ public class GCDCalculator {
 }
 
 /*
+
 Simulated Output:
 -----------------
 Enter the first number: 36
 Enter the second number: 60
 GCD of 36 and 60 is: 12
+
 */
