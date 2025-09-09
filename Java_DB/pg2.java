@@ -16,13 +16,13 @@ public class DATAc {
 
             Statement stmt = con.createStatement();
 
-            // Create a database if it doesn't exist
+            // Create database if it doesn't exist
             String dbName = "EmployeeDB";
             String createDB = "CREATE DATABASE IF NOT EXISTS " + dbName;
             stmt.executeUpdate(createDB);
             System.out.println("Database created: " + dbName);
 
-            // Reconnect to the specific database
+            // Connect to the specific database
             con = DriverManager.getConnection(url + dbName, user, password);
             stmt = con.createStatement();
 
@@ -34,6 +34,16 @@ public class DATAc {
                                  "salary DECIMAL(10,2))";
             stmt.executeUpdate(createTable);
             System.out.println("Table 'employee' created successfully!");
+
+            // Insert dummy employee data
+            String insertData = "INSERT INTO employee (emp_name, designation, salary) VALUES " +
+                                "('Alice Johnson', 'Software Engineer', 75000.00)," +
+                                "('Bob Smith', 'Project Manager', 85000.00)," +
+                                "('Carol Davis', 'Data Analyst', 65000.00)," +
+                                "('David Lee', 'UX Designer', 70000.00)," +
+                                "('Eva Brown', 'HR Manager', 60000.00)";
+            int rowsInserted = stmt.executeUpdate(insertData);
+            System.out.println(rowsInserted + " rows inserted into 'employee' table.");
 
             // Close the connection
             con.close();
