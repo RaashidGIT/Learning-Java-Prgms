@@ -31,7 +31,7 @@ public class PrimeNumbers {
 
 import java.util.Scanner;
 
-public class Nprime {
+public class PrimeNumbers {
     public static boolean isPrime(int num) {
         if (num <= 1) return false;
         for (int i = 2; i <= num / 2; i++) {
