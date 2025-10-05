@@ -1,6 +1,4 @@
-/*
-Aim: To copy the contents of one file to another using JavaFileInputStream and FileOutputStream classes.
-*/
+/*  Aim: To copy the contents of one file to another using JavaFileInputStream and FileOutputStream classes.  */
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
